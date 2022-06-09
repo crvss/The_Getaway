@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<<<<<<< Updated upstream
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="1004.0" style="-fx-background-image: url('//Assets/jukeboxBG.jpg'); -fx-background-size: cover; -fx-background-position: center;" stylesheets="menuStyle.css" xmlns="http://javafx.com/javafx/8.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.JukeBoxController">
+=======
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="944.0" style="-fx-background-image: url('//Assets/backgroundMenu.jpg'); -fx-background-size: cover; -fx-background-position: center; " stylesheets="@../../../production/the-getaway-le/menuStyle.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.JukeBoxController">
+>>>>>>> Stashed changes
+   <children>
+      <BorderPane stylesheets="@../../../Assets/menuStyle.css">
+         <center>
+<<<<<<< Updated upstream
+            <GridPane alignment="CENTER" prefHeight="669.0" prefWidth="1271.0" BorderPane.alignment="CENTER">
+=======
+            <GridPane alignment="CENTER" prefHeight="518.0" prefWidth="987.0" stylesheets="@../../../Assets/menuStyle.css" BorderPane.alignment="CENTER">
+>>>>>>> Stashed changes
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="169.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="650.0" minWidth="10.0" prefWidth="632.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="656.0" minWidth="10.0" prefWidth="168.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="0.0" prefWidth="0.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="199.0" minHeight="10.0" prefHeight="199.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="139.0" minHeight="0.0" prefHeight="139.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="171.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="167.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+<<<<<<< Updated upstream
+                  <HBox GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <VBox GridPane.columnIndex="1">
+                     <children>
+                        <Text fx:id="lblTitle" lineSpacing="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WindowName" text="Jukebox" textAlignment="CENTER" wrappingWidth="651.33154296875">
+                           <font>
+                              <Font name="Arial Black" size="65.0" />
+                           </font>
+                           <fill>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop color="#009e05" />
+                                    <Stop color="#024300" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </Text>
+                     </children>
+                  </VBox>
+=======
+                  <Button fx:id="exitButton" alignment="CENTER" mnemonicParsing="false" onAction="#onExit" prefHeight="33.0" prefWidth="157.0" stylesheets="@../../../Assets/menuStyle.css" text="Back" textAlignment="CENTER" translateY="30.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <ImageView fx:id="pauseMusic" fitHeight="150.0" fitWidth="158.0" onMouseClicked="#onPause" pickOnBounds="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../Assets/pausebtnV3.png" />
+                     </image>
+                  </ImageView>
+                  <Slider fx:id="musicSlider" onMouseDragged="#onBackgroundChange" onMousePressed="#onBackgroundChange" onMouseReleased="#onBackgroundChange" prefHeight="23.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                  <ImageView fx:id="playMusic" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#onPlay" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../Assets/playbtnV3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="stopMusic" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#onStop" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../Assets/stopbtnV3.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="MoTD" prefHeight="31.0" prefWidth="565.0" stylesheets="@../../../Assets/menuStyle.css" text="Label" textAlignment="CENTER" textFill="#00ffcc" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+                  <Label alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" prefHeight="18.0" prefWidth="171.0" text="Duration:" textAlignment="CENTER" textFill="#00ffcc" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+                  <Slider fx:id="progressBar" onMouseDragged="#onMouseDraggedMB" onMousePressed="#onMousePressedMB" prefHeight="14.0" prefWidth="322.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="18.0" prefWidth="171.0" text="Volume:" textFill="#00ffd9" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+                  <Text fx:id="lblTitle" lineSpacing="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WindowName" text="Jukebox" textAlignment="CENTER" wrappingWidth="578.33154296875" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial Black" size="65.0" />
+                     </font>
+                     <fill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#009e05" />
+                              <Stop color="#024300" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+>>>>>>> Stashed changes
+                  <VBox GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <VBox GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <VBox GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <children>
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="BOTTOM_CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <ComboBox fx:id="musicBox" onAction="#onSelectionBox" prefHeight="33.0" prefWidth="170.0" style="-fx-background-color: BLACK;" />
+                     </children>
+                  </HBox>
+                  <HBox GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <HBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="90.0" prefWidth="647.0">
+                           <children>
+                              <ImageView fx:id="playMusic" fitHeight="49.0" fitWidth="66.0" onMouseClicked="#onPlay" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Assets/pausebtnV3.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="87.0" prefWidth="67.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="180.0" prefWidth="671.0">
+                           <children>
+                              <ImageView fx:id="stopMusic" fitHeight="46.0" fitWidth="119.0" onMouseClicked="#onStop" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Assets/stopbtnV3.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <VBox GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="633.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="119.0" text="Time Elapsed:" />
+                              <Slider fx:id="progressBar" onMouseDragged="#onMouseDraggedMB" onMousePressed="#onMousePressedMB" onMouseReleased="#handCursorReset" prefHeight="14.0" prefWidth="459.0">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor></Slider>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="512.0" text="Music Volume:" />
+                              <Slider fx:id="musicSlider" onMouseDragged="#onBackgroundChange" onMousePressed="#onBackgroundChange" onMouseReleased="#handCursorReset" prefHeight="17.0" prefWidth="786.0">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor></Slider>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="186.0" text="Sound Effect Volume:" />
+                              <Slider fx:id="sliSFX" onMouseDragged="#sfxLabelUpdater" onMousePressed="#handCursorChange" onMouseReleased="#onSFXChange" prefHeight="14.0" prefWidth="459.0">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor></Slider>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="lblTime" prefHeight="28.0" prefWidth="181.0" text="TIME ELAPSED" textAlignment="CENTER" />
+                        <Label fx:id="lblMusicText" text="MUSIC LEVEL" />
+                        <Label fx:id="lblSFXText" text="SFX LEVEL" />
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

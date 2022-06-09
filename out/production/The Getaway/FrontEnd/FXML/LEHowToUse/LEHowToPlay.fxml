@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('//Assets/backgroundMenu.jpg'); -fx-background-size: cover; -fx-background-position: center;" stylesheets="menuStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.LEHowToPlayController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="223.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="How to use the level editor" />
+            <Button fx:id="leTilesButton" mnemonicParsing="false" onAction="#onLETilesButton" prefHeight="32.0" prefWidth="138.0" text="Normal Tiles" />
+            <Button fx:id="leStartingPositionsButton" mnemonicParsing="false"  onAction="#onLEStartingPositions" prefHeight="32.0" prefWidth="204.0" text="Starting Positions" />
+            <Button fx:id="leChangeColorButton" mnemonicParsing="false" onAction="#onChangeColorButton" prefHeight="32.0" prefWidth="220.0" text="Car Color Change" />
+            <Button fx:id="leActionTilesButton" mnemonicParsing="false" onAction="#onLEActionTiles" prefHeight="32.0" prefWidth="169.0" text="Action Tiles" />
+            <Button fx:id="backToLE" mnemonicParsing="false" onAction="#onBackToLE" prefHeight="32.0" prefWidth="230.0" text="Back to level editor" />
+         </children></VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,17 @@
+.dialog-pane	{
+	-fx-background-color: #404040
+}
+
+.button{
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-cursor: hand;
+}
+
+.label {
+    -fx-text-fill: whitesmoke;
+    -fx-fill: white;
+    -fx-font-family: Consolas;
+    -fx-font-size: 15px;
+}
